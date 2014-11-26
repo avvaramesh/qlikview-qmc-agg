@@ -12,10 +12,11 @@ $(document).ready(function() {
         senseSelected = 'selected="selected"';
       }
 
-      $('#servers').append("<div id='"+i+"'><input type='text' value='" + servers[i].name + "'> </input>\
-      <input type='text' value='" + servers[i].url + "'> </input>\
-      <select><option value='QlikView' " + qvSelected +">QlikView</option><option value='Qlik Sense' " + senseSelected +">Qlik Sense</option></select>\
-      <input type='button' class='delete' value='x'></input></div>");
+      $('#servers').append("<div id='"+i+"'>\
+      Name: <input type='text' value='" + servers[i].name + "'> </input>\
+      &nbsp;&nbsp;URL: <input type='text' value='" + servers[i].url + "' size='50'> </input>\
+      &nbsp;&nbsp;Type: <select><option value='QlikView' " + qvSelected +">QlikView</option><option value='Qlik Sense' " + senseSelected +">Qlik Sense</option></select>\
+      <input style='vertical-align:middle; padding-bottom: 4px' type='image' src='/assets/remove.png' class='delete' width='16' height='16'></input></div>");
     }
 
     $('.delete').on('click', function (){
@@ -26,11 +27,18 @@ $(document).ready(function() {
   });
 
   $('#addServer').on('click', function (){
-    $('#servers').append("<div id=''><input type='text' value=''> </input>\
-      <input type='text' value=''> </input>\
-      <select><option value='QlikView' selected='selected'>QlikView</option><option value='Qlik Sense'>Qlik Sense</option></select>\
-      </input><input type='button' class='delete' value='x'></input></div>");
+    var id = Math.floor(Math.random() * 999999) + 1;
+    $('#servers').append("<div id='"+id+"'>Name: <input type='text' value=''> </input>\
+      &nbsp;&nbsp;URL: <input type='text' value=''  size='50'> </input>\
+      &nbsp;&nbsp;Type: <select><option value='QlikView' selected='selected'>QlikView</option><option value='Qlik Sense'>Qlik Sense</option></select>\
+      <input style='vertical-align:middle; padding-bottom: 4px' type='image' src='/assets/remove.png' class='delete' width='16' height='16'></input></div>");
+
+      $('.delete').on('click', function (){
+        var removeId = ($(this).parent().closest('div').attr('id'));
+        $('#' + removeId).remove();
+      });
   });
+
 
   $('#saveOptions').on('click', function (){
     var options = $('#servers').children("div");

@@ -8,19 +8,15 @@
 
   <body>
     <div id="left">
-      <input id="reloadServers" type="button" value="Refresh"></input>
+      <input id="reloadServers" type="image" src='/assets/reload.png' value="Reload" width='20' height='20' style="float: right; padding-right: 5px"></input>
+      <input id='options' type='image' src='/assets/options.png' value='Options' width='20' height='20'  style="float: right; padding-right: 5px"></input>
+      </br><hr class="style-one">
       <ul id="servers" class="collapsibleList">
 
       </ul>
-      <div style="position: absolute; bottom: 0; left: 0;">
-        <input type='button' id='options' value='Options'></input>
-      </div>
     </div>
     <div id="right">
       <webview id="webview" src="" style="height: 100%; width: 100%;"></webview>
-      <div id="optionsview">
-        asdasdasd
-      </div>
     </div>
     <script type="text/javascript" src="/js/CollapsibleLists.js"></script>
     <script src="main.js"></script>
