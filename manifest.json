@@ -4,7 +4,7 @@
   "short_name": "QMC Viewer",
   "description": "QMC Viewer",
 
-  "version": "0.0.1.0",
+  "version": "0.0.5",
 
   "icons": {
     "16": "assets/icon_16.png",

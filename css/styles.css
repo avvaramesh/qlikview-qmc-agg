@@ -9,12 +9,13 @@ body{
 
 div#left {
     width: 20%;
-    height: 91%;
+    height: 98%;
     float: left;
+    overflow: auto;
 }
 div#right {
     margin-left: 20%;
-    height: 95%;
+    height: 91%;
     border: 1px solid #a1a1a1;
     padding: 10px 10px 10px 10px;
     background: #dddddd;

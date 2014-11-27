@@ -46,7 +46,7 @@ function DrawServers() {
       var serverType = servers[i].type;
 
       if(serverType === 'QlikView') {
-        $('#servers').append('<li>' + serverName + '<ul> \
+        $('#servers').append('<li><strong>' + serverName + '</strong><ul> \
         <li class="tab">Status \
         <ul>\
         <li class="link" data-ref="'+ serverName  +'" title="'+ serverUrl + '/Default.htm'  +'">Tasks</li>\
@@ -79,7 +79,7 @@ function DrawServers() {
         </li>\
         </ul></li>');
       } else {
-        $('#servers').append('<li>' + serverName + '<ul> \
+        $('#servers').append('<li><strong>' + serverName + '</strong><ul> \
         <li class="tab">Manage Content\
         <ul>\
         <li class="link" data-ref="'+ serverName  +'" title="'+ serverUrl + '/apps'  +'">Apps</li>\
