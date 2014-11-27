@@ -97,7 +97,7 @@ function DrawServers() {
         <li class="link" title="'+ serverUrl + '/audit'  +'">Audit</li>\
         <li class="link" title="'+ serverUrl + '/securityrules'  +'">Security rules</li>\
         <li class="link" title="'+ serverUrl + '/customproperties'  +'">Custom properties</li>\
-        <li class="link" title="'+ serverUrl + '/licenseandtokens'  +'">License and tokens</li>\
+        <li class="link" title="'+ serverUrl + '/tokens'  +'">License and tokens</li>\
         <li class="link" title="'+ serverUrl + '/extensions'  +'">Extensions</li>\
         <li class="link" title="'+ serverUrl + '/tags'  +'">Tags</li>\
         <li class="link" title="'+ serverUrl + '/userdirectoryconnectors'  +'">User directory connectors</li>\
