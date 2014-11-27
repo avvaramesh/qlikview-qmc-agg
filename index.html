@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>qmc-chrome-app</title>
+    <title>QMC Viewer</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/jquery-2.1.1.min.js"></script>
   </head>
@@ -15,8 +15,12 @@
 
       </ul>
     </div>
+    <div id="right1">
+      Server:&nbsp;&nbsp;<span id="selectedServer">Server not selected</span>
+      </br><hr class="style-one">
+    </div>
     <div id="right">
-      <webview id="webview" src="" style="height: 100%; width: 100%;"></webview>
+        <webview id="webview" src="" style="height: 100%; width: 100%;"></webview>
     </div>
     <script type="text/javascript" src="/js/CollapsibleLists.js"></script>
     <script src="main.js"></script>
